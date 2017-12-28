@@ -1,0 +1,143 @@
+html, body {
+    width: 780px !important;
+}
+
+.tab-content .tab-pane {
+    padding: 20px !important;
+}
+
+.promo {
+    font-size: 46px;
+    position: absolute;
+    font-weight: 730;
+    top: 14px;
+    left: 67px;
+}
+
+.tab-pane.fade.other {
+    font-size: 12px;
+}
+
+.nav-tabs, .nav-tabs .nav-link.active:focus, .nav-tabs .nav-link.active:hover, .nav-tabs .nav-link.active {
+    color: #000 !important;
+    border-color: #000;
+}
+
+header, .nav-tabs, .nav-tabs .nav-link.active {
+    background: #f7e018;
+}
+
+.nav {
+    display: table !important;
+    width: 100% !important;
+    table-layout: fixed;
+}
+
+.nav .nav-item {
+    display: table-cell;
+    text-align: center;
+}
+
+table, tr {
+    width: 740px !important;
+    max-width: 740px !important;
+}
+
+.table-bordered,.table-bordered td,.table-bordered th {
+    border: none !important;
+    border-right: 1px solid rgba(0,0,0,.06) !important;
+    border-bottom: 1px solid rgba(0,0,0,.06) !important
+}
+
+td {
+    width: 695px !important;
+    max-width: 695px !important;
+    overflow: auto !important;
+}
+
+.ripple{
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, .5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 1;
+    }
+    20% {
+        transform: scale(25, 25);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(40, 40);
+    }
+}
+
+.checkbox label input[type=checkbox]:checked+.checkbox-decorator .check,label.checkbox-inline input[type=checkbox]:checked+.checkbox-decorator .check {
+    color: #f7e018 !important;
+    border-color: #f7e018 !important;
+}
+
+.checkbox label input[type=checkbox]:checked+.checkbox-decorator .check:before,label.checkbox-inline input[type=checkbox]:checked+.checkbox-decorator .check:before {
+    color: #f7e018 !important;
+}
+
+.ripple:focus:not(:active)::after {
+    animation: ripple 1s ease-out;
+}
+
+
+tr > th:first-child {
+    max-width: 40px !important;
+    overflow: auto !important;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-button {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a7a4a4;
+    border: 0px none #ffffff;
+    border-radius: 22px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border: 0px none #ffffff;
+    border-radius: 53px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: transparent;
+}
+
+::-webkit-scrollbar-track:active {
+    background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}

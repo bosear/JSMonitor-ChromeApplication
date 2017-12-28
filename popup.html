@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Popup</title>
+        <link rel="stylesheet" href="css/bootstrap-material-design.min.css">
+        <link rel="stylesheet" href="css/prism.css">
+        <link rel="stylesheet" href="css/extension.css">
+        <script src="js/lib/jquery-3.2.1.slim.min.js"></script>
+        <script src="js/lib/popper.js"></script>
+        <script src="js/lib/bootstrap-material-design.min.js"></script>
+        <script src="js/lib/prism.js"></script>
+        <script src="js/lib/beautify.js"></script>
+        <script src="js/popup.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>
+            <img src="img/logo-small.png" alt="JS">
+            <span class="promo">Monitor</span>
+        </header>
+        <nav class="nav nav-tabs" id="myTab" role="tablist">
+            <a class="nav-item nav-link active ripple" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-expanded="true">Журнал</a>
+            <a class="nav-item nav-link ripple" id="nav-settings-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile">Настройки</a>
+            <a class="nav-item nav-link ripple" id="nav-other-tab" data-toggle="tab" href="#nav-other" role="tab" aria-controls="nav-profile">О программе</a>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Пока здесь ничего нет...</div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-settings-tab">
+                <div class="card">
+                    <div class="card-header">
+                        Отслеживаемые функции
+                    </div>
+                    <div class="card-body">
+                            <span class="bmd-form-group is-filled">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" data-func="write">
+                                        <span class="checkbox-decorator">
+                                            <span class="check"></span>
+                                        </span>
+                                        document.write
+                                    </label>
+                                </div>
+                            </span>
+                            <span class="bmd-form-group">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" data-func="setTimeout">
+                                        <span class="checkbox-decorator">
+                                            <span class="check"></span>
+                                        </span>
+                                        setTimeout
+                                    </label>
+                                </div>
+                            </span>
+                            <span class="bmd-form-group">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" data-func="setInterval">
+                                        <span class="checkbox-decorator">
+                                            <span class="check"></span>
+                                        </span>
+                                        setInterval
+                                    </label>
+                                </div>
+                            </span>
+                            <span class="bmd-form-group">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" data-func="createElement">
+                                        <span class="checkbox-decorator">
+                                            <span class="check"></span>
+                                        </span>
+                                        document.createElement
+                                    </label>
+                                </div>
+                            </span>
+                            <span class="bmd-form-group">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" data-func="eval">
+                                        <span class="checkbox-decorator">
+                                            <span class="check"></span>
+                                        </span>
+                                        eval
+                                    </label>
+                                </div>
+                            </span>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade other" id="nav-other" role="tabpanel" aria-labelledby="nav-other-tab">
+                Версия 0.1.0 <br><br>
+                Приложение необходимо для демонстрации параметров, которые передаются вызывающимся функциям. <br><br>
+                Список функций ограничен. В связи с особенность js-функций, корректная работа основного web-контента — не гарантируется. <br><br>
+                Используете приложение только по назначению, после чего отключайте. Примечание: полное отключение — выключить из-под chrome-a <br><br>
+                Создано в экспериментальных целях. Всего доброго.
+            </div>
+        </div>
+    </body>
+</html>
